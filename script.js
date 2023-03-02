@@ -142,3 +142,47 @@
 // const flightData = [353, "Ramesh Kumar Sinha"];
 // book.apply(eurowings, flightData);
 // console.log(eurowings.bookings);
+
+/////
+
+// 134. The bind method
+
+// const lufthansa = {
+//   airline: "Lufthansa",
+//   iatacode: "LH",
+//   bookings: [],
+//   book: function (flightNum, name) {
+//     console.log(
+//       `${name} booked a seat in ${this.airline} flight ${this.iatacode}${flightNum}`
+//     );
+//     this.bookings.push({
+//       fligt: `${this.iatacode}${flightNum}`,
+//       passengerName: name,
+//     });
+//   },
+// };
+
+// const eurowings = {
+//   airline: "Eurowings",
+//   iatacode: "EW",
+//   bookings: [],
+// };
+
+// const book = lufthansa.book;
+
+// const bookLH = book.bind(lufthansa);
+// const bookEW = book.bind(eurowings);
+
+// // bookLH(898, "Anshu Sinha");
+// // bookEW(865, "Sahil Sinha");
+
+// // with event listeners
+// lufthansa.planes = 300;
+// lufthansa.buyPlane = function () {
+//   this.planes += 1;
+//   console.log(this.planes);
+// };
+
+// document
+//   .querySelector(".buy")
+//   .addEventListener("click", lufthansa.buyPlane.bind(lufthansa));
