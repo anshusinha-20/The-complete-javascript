@@ -102,3 +102,43 @@
 // greeter("Anshu");
 
 // greet("Hi")("Sam");
+
+/////
+
+// 133. The call and apply methods
+
+// const lufthansa = {
+//   airline: "Lufthansa",
+//   iatacode: "LH",
+//   bookings: [],
+//   book: function (flightNum, name) {
+//     console.log(
+//       `${name} booked a seat in ${this.airline} flight ${this.iatacode}${flightNum}`
+//     );
+//     this.bookings.push({
+//       fligt: `${this.iatacode}${flightNum}`,
+//       passengerName: name,
+//     });
+//   },
+// };
+
+// lufthansa.book(123, "Anshu Sinha");
+// lufthansa.book(433, "Sahil Sinha");
+// console.log(lufthansa.bookings);
+
+// const eurowings = {
+//   airline: "Eurowings",
+//   iatacode: "EW",
+//   bookings: [],
+// };
+
+// const book = lufthansa.book;
+
+// // call method
+// book.call(eurowings, 564, "Madhuri Sinha");
+// console.log(eurowings.bookings);
+
+// // apply method
+// const flightData = [353, "Ramesh Kumar Sinha"];
+// book.apply(eurowings, flightData);
+// console.log(eurowings.bookings);
