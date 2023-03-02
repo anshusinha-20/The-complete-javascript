@@ -81,3 +81,24 @@
 // transform("JavaScript is the best language!", upperFirstWord);
 // console.log("/////");
 // transform("JavaScript is the best language!", oneWord);
+
+/////
+
+// 132. Functions returning functions
+
+// const greet = function (greeting) {
+//   return function (name) {
+//     console.log(`${greeting} ${name}`);
+//   };
+// };
+
+// const greet = (greeting) => {
+//   return (name) => {
+//     console.log(`${greeting} ${name}`);
+//   };
+// };
+
+// const greeter = greet("Hey");
+// greeter("Anshu");
+
+// greet("Hi")("Sam");
