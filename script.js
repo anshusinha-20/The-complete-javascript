@@ -242,3 +242,11 @@
 // document
 //   .querySelector(".poll")
 //   .addEventListener("click", poll.registerNewAnswer.bind(poll));
+
+/////
+
+// 136. Immediately invoked function espressions (IIFE)
+
+// (function (name) {
+//   console.log(`My name is ${name}`);
+// })("Anshu");
