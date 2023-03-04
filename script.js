@@ -250,3 +250,22 @@
 // (function (name) {
 //   console.log(`My name is ${name}`);
 // })("Anshu");
+
+/////
+
+// 137. Closures
+
+// const secureBooking = function () {
+//   let passengerCount = 0;
+
+//   return function () {
+//     passengerCount += 1;
+//     console.log(`${passengerCount} passengers`);
+//   };
+// };
+
+// const book = secureBooking();
+
+// book();
+// book();
+// book();
